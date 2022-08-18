@@ -2,9 +2,9 @@ import { ProjectCard } from "./ProjectCard";
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import React from "react";
+import { Slider } from "./Slider";
 
 export const Projects: React.FC = () => {
-  const [width, setWidth] = React.useState<number>(0);
   const projects = [
     {
       title: "Expiro",
@@ -39,34 +39,13 @@ export const Projects: React.FC = () => {
       website: "",
     },
   ];
-  const carouselRef = useRef<HTMLDivElement>(null);
 
-  React.useEffect(() => {
-    const carousel = carouselRef.current;
-    if (carousel) {
-      setWidth(carousel.scrollWidth - carousel.offsetWidth);
-    }
-  }, []);
   return (
-    <motion.div
-      ref={carouselRef}
-      className="overflow-hidden w-full cursor-grab"
-    >
-      <motion.div
-        drag={"x"}
-        dragConstraints={{
-          right: 0,
-          left: -width,
-        }}
-        className="flex"
-      >
-        {projects.map((project, i) => (
-          <motion.div className="" key={i}>
-            <ProjectCard key={i} project={project} />
-          </motion.div>
-        ))}
-      </motion.div>
-    </motion.div>
+    <Slider>
+      {projects.map((project, i) => (
+        <ProjectCard key={i} project={project} />
+      ))}
+    </Slider>
   );
 };
 

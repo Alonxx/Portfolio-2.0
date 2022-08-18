@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import React, { useRef } from "react";
 
 interface Props {
-  chidlren: React.ReactNode;
+  children: React.ReactNode;
 }
 
-export const Slider: React.FC<Props> = ({ chidlren }) => {
+export const Slider: React.FC<Props> = ({ children }) => {
   const [width, setWidth] = React.useState<number>(0);
 
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -30,7 +30,7 @@ export const Slider: React.FC<Props> = ({ chidlren }) => {
         }}
         className="flex"
       >
-        {chidlren}
+        {children}
       </motion.div>
     </motion.div>
   );
