@@ -13,10 +13,10 @@ interface Props {
 
 export const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    <div className=" mb-10 shadow-sm shadow-black/50 ml-5 md:ml-10 bg-[#1c1f39]  rounded-2xl px-4 pt-2 pb-3">
+    <div className=" mb-10 shadow-sm shadow-black/50 ml-2 mr-3 lg:ml-10 bg-[#1c1f39]  rounded-2xl px-4 pt-2 pb-3">
       <div>
         <div className=" text-start ml-2 mb-4">
-          <h1 className=" mt-2 text-xs md:text-md text-white font-medium">
+          <h1 className=" mt-2 text-xs lg:text-md text-white font-medium">
             {project.description}
           </h1>
           <div className="flex flex-row item-center ">
@@ -26,14 +26,14 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
           </div>
         </div>
       </div>
-      <div className=" w-80 h-36 md:w-80 md:h-48  ">
+      <div className=" w-64 h-36 lg:w-80 lg:h-48  ">
         <img
-          className="shadow-md shadow-black/50 rounded-2xl object-cover w-80 h-36 md:w-80 md:h-48 pointer-events-none"
+          className="shadow-md shadow-black/50 rounded-2xl object-cover w-64 h-36 lg:w-80 lg:h-48 pointer-events-none"
           src={project.image}
           alt="project"
         />
       </div>
-      <div className="flex flex-row gap-4 mt-4">
+      <div className="flex flex-row gap-4 mt-7 lg:mt-4">
         <a
           href={project.github}
           target="_blank"
@@ -54,11 +54,11 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
         </a>
       </div>
 
-      <div className="flex flex-row flex-wrap w-full rounded-t-xl  mb-2 mt-3 ">
+      <div className="flex flex-row flex-wrap w-full rounded-t-xl  mb-2  mt-3 ">
         {project.tags.map((tag: string, i: number) => (
           <div
             key={i}
-            className="text-center shadow-lg shadow-black/50 mt-2 mr-2 rounded-lg bg-white w-fit px-[4px] py-[1px]  md:mb-2"
+            className="text-center shadow-lg shadow-black/50 mt-2 mr-2 rounded-lg bg-white w-fit px-[4px] py-[1px]  lg:mb-2"
           >
             <span key={i} className="text-xs text-black font-normal">
               {tag}

@@ -1,6 +1,6 @@
 export { Header } from "./Header";
 export { FloatingIcons } from "./FloatingIcons";
-export { Marquee } from "./Marquee";
+
 export { Avatar } from "./Avatar";
 export { ProjectCard } from "./ProjectCard";
 export { Skills } from "./Skills";

@@ -25,7 +25,7 @@ export const FloatingIcons: React.FC<Props> = ({ children }) => {
           marginTop: -pageMovement.pageY * 0.01,
         }}
         className={
-          "animate-floatLeft rotate-[-20deg] absolute h-24 bottom-[80%] md:h-40 left-[1rem] md:left-[13%] md:bottom-[70%] "
+          "animate-floatLeft rotate-[-20deg] absolute h-24 bottom-[80%] lg:h-40 left-[1rem] md:left-[13%] md:bottom-[70%] "
         }
       />
       <img
@@ -36,7 +36,7 @@ export const FloatingIcons: React.FC<Props> = ({ children }) => {
           marginRight: -pageMovement.pageX * 0.01,
           marginTop: -pageMovement.pageY * 0.01,
         }}
-        className="rotate-[20deg] absolute h-24 md:h-40 bottom-[80%] md:bottom-[70%] right-[1rem]  md:right-[14%] animate-floatRight  animation-delay-200"
+        className="rotate-[20deg] absolute h-24 lg:h-40 bottom-[80%] md:bottom-[70%] right-[1rem]  md:right-[14%] animate-floatRight  animation-delay-200"
       />
       <div>{children}</div>
       <img
@@ -48,7 +48,7 @@ export const FloatingIcons: React.FC<Props> = ({ children }) => {
           marginTop: -pageMovement.pageY * 0.01,
         }}
         className={
-          "absolute h-20 md:h-32 animate-floatLeft rotate-[-20deg] opacity-90 animation-delay-300 left-[13%] bottom-[-4.5rem] md:bottom-[-70%]"
+          "absolute h-20 lg:h-32 animate-floatLeft rotate-[-20deg] opacity-90 animation-delay-300 left-[13%] bottom-[-4.5rem] md:bottom-[-70%]"
         }
       />
       <img
@@ -59,7 +59,7 @@ export const FloatingIcons: React.FC<Props> = ({ children }) => {
           marginRight: -pageMovement.pageX * 0.01,
           marginTop: -pageMovement.pageY * 0.01,
         }}
-        className="rotate-[20deg] absolute h-20 md:h-32 animate-floatRight opacity-90 animation-delay-600 bottom-[-4.5rem] md:bottom-[-70%] right-[8%] md:right-[16%]"
+        className="rotate-[20deg] absolute h-20 lg:h-32 animate-floatRight opacity-90 animation-delay-600 bottom-[-4.5rem] md:bottom-[-70%] right-[8%] md:right-[16%]"
       />
     </div>
   );

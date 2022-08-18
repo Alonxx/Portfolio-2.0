@@ -10,16 +10,16 @@ export const Contact = () => {
   }[] = [
     {
       title: "Email",
-      icon: <FiMail className="text-white text-2xl md:text-4xl" />,
+      icon: <FiMail className="text-white text-2xl lg:text-4xl" />,
       url: "mailto:alonsodiazlip@gmail.com",
     },
     {
-      icon: <BsLinkedin className="text-white  text-2xl md:text-4xl" />,
+      icon: <BsLinkedin className="text-white  text-2xl lg:text-4xl" />,
       title: "Linkedin",
       url: "https://www.linkedin.com/in/alonsojesusdiaz/",
     },
     {
-      icon: <BsGithub className="text-white text-2xl md:text-4xl" />,
+      icon: <BsGithub className="text-white text-2xl lg:text-4xl" />,
       title: "Github",
       url: "https://github.com/Alonxx",
     },

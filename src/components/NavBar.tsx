@@ -21,7 +21,7 @@ export const NavBar: React.FC = () => {
       <div className="w-full flex justify-center gap-7 mt-4">
         {menuOptions.map((option, i) => (
           <a href={option.link} key={i} className="cursor-pointer">
-            <span className="text-white font-medium text-lg md:text-xl ">
+            <span className="text-white font-medium text-lg lg:text-xl ">
               {option.name}
             </span>
           </a>

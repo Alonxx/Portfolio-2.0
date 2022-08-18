@@ -34,16 +34,16 @@ export const Skills: React.FC = () => {
   ];
 
   return (
-    <div className="grid grid-rows-2 md:grid-rows-1 grid-flow-col gap-4">
+    <div className="grid grid-rows-2 lg:grid-rows-1 grid-flow-col gap-4">
       {tools.map((tool, i) => (
         <div
           key={i}
-          className="mr-3 md:mr-10 mb-8 flex flex-col justify-center items-center gap-1 md:gap-2"
+          className="mr-3 lg:mr-10 mb-8 flex flex-col justify-center items-center gap-1 lg:gap-2"
         >
-          <div className="w-8 md:w-14">
+          <div className="w-8 lg:w-14">
             <img src={tool.image} alt={tool.name} />
           </div>
-          <span className="text-gray-400 text-xs md:text-sm text-center font-medium">
+          <span className="text-gray-400 text-xs lg:text-sm text-center font-medium">
             {tool.name}
           </span>
         </div>
