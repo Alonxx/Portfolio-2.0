@@ -20,7 +20,7 @@ export const Slider: React.FC<Props> = ({ children }) => {
   return (
     <motion.div
       ref={carouselRef}
-      className="overflow-hidden w-full cursor-grab "
+      className="overflow-hidden w-full cursor-grab"
     >
       <motion.div
         drag={"x"}
