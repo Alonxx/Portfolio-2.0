@@ -13,7 +13,7 @@ interface Props {
 
 export const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    <div className=" mb-10 shadow-sm shadow-black/50 ml-2 mr-3 lg:ml-10 bg-[#1c1f39]  rounded-2xl px-4 pt-2 pb-3">
+    <div className="max-w-[18rem] min-h-[26rem] lg:min-h-0 lg:max-w-[22rem]  mb-10 shadow-sm shadow-black/50  bg-[#1c1f39] q  rounded-2xl px-4 pt-2 pb-3">
       <div>
         <div className=" text-start ml-2 mb-4">
           <h1 className=" mt-2 text-xs lg:text-md text-white font-medium">

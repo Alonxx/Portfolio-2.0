@@ -1,0 +1,1 @@
+export { useGetWindowDimensions } from "./useGetWindowDimensions";

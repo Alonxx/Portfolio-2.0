@@ -1,8 +1,19 @@
 import { ProjectCard } from "./ProjectCard";
 import React from "react";
-import { Slider } from "./Slider";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import { useGetWindowDimensions } from "../hooks";
 
 export const Projects: React.FC = () => {
+  const { height, width } = useGetWindowDimensions();
+
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 1 },
+
+    1024: { items: 2 },
+  };
+
   const projects = [
     {
       title: "Expiro",
@@ -41,10 +52,26 @@ export const Projects: React.FC = () => {
   ];
 
   return (
-    <Slider>
-      {projects.map((project, i) => (
+    <AliceCarousel
+      mouseTracking
+      disableButtonsControls
+      disableDotsControls
+      paddingLeft={width < 768 ? 20 : 0}
+      paddingRight={
+        width < 370
+          ? 30
+          : width < 768
+          ? 50
+          : width < 900
+          ? 430
+          : width < 1024
+          ? 600
+          : 200
+      }
+      responsive={responsive}
+      items={projects.map((project, i) => (
         <ProjectCard key={i} project={project} />
       ))}
-    </Slider>
+    />
   );
 };

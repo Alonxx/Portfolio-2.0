@@ -14,7 +14,7 @@ export const HomePage: React.FC = () => {
         <NavBar />
       </div>
 
-      <div className="  mb-10 flex flex-col  ">
+      <div className="mb-10 flex flex-col">
         <div className="mx-auto w-fit m-auto  text-center flex flex-col justify-between items-center ">
           <div className="mb-3 lg:mb-5">
             <Avatar className="inline-block rounded-full w-14 h-14 lg:w-28 lg:h-28 " />
