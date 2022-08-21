@@ -5,7 +5,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { useGetWindowDimensions } from "../hooks";
 
 export const Projects: React.FC = () => {
-  const { height, width } = useGetWindowDimensions();
+  const { width } = useGetWindowDimensions();
 
   const responsive = {
     0: { items: 1 },
