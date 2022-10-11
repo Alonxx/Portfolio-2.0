@@ -15,6 +15,14 @@ export const Projects: React.FC = () => {
 
   const projects = [
     {
+      title: "Wordle",
+      image: "/images/wordle.png",
+      description: "Wordle Game.",
+      tags: ["React", "TailwindCSS", "TypeScript"],
+      github: "https://github.com/Alonxx/Wordle",
+      website: "https://www.alonsodiaz.dev/Wordle/",
+    },
+    {
       title: "Expiro",
       image: "/images/expiro.png",
       description: "Products expiration control.",
